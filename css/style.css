@@ -24,6 +24,7 @@ html, body {
   background-color: #191919;
   border: 1px solid #191919;
   color: #F0EFE9;
+  transition: 0.25s;
 }
 
 header {
@@ -98,6 +99,7 @@ header .container .menu .top-menu .social-media a {
 }
 header .container .menu .top-menu .social-media a:hover {
   color: #161616;
+  transition: 0.25s;
 }
 header .container .menu .main-menu {
   display: flex;
