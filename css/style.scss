@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,900&display=swap');
 html, body {
     color: #191919;
     font-family: 'Inter', sans-serif;
@@ -12,10 +12,11 @@ html, body {
     border: 1px solid #f9D783;
     color: #191919;
     text-decoration: none;
-    padding: 8px 25px;
+    padding: 12px 30px;
     font-weight: 600;
     font-size: 16px;
     border-radius: 25px;
+
 
     i {
         margin-left: 8px;
@@ -31,6 +32,30 @@ html, body {
     }
 }
 
+.btn-transparent {
+    background-color: transparent;
+    border: 1px solid #191919;
+    color: #191919;
+    text-decoration: none;
+    padding: 12px 30px;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 25px;
+
+
+    i {
+        margin-left: 8px;
+        font-size: 0.9em;
+    }
+
+    &:hover {
+        background-color: #191919;
+        border: 1px solid #191919;
+        color: #F0EFE9;
+        transition: 0.25s;
+
+    }
+}
 
 header {
     padding: 16px;
@@ -48,6 +73,7 @@ header {
             background-color: transparent;
             @media (min-width: 992px) {
                 display: none;
+                }
             }
         }
 
@@ -144,10 +170,81 @@ header {
                         }
                     }
                 }
-
-
+                .btn-yellow {
+                    padding-top: 12px;
+                    padding-bottom: 12px;
+                }
             }
             
         }
 }
+
+.showcase {
+    background-color: #F0EFE9;
+
+    .container {
+            display: flex;
+            justify-content: space-between;
+
+        .content {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            text-align: center;
+
+            @media (min-width: 1200px) {
+                text-align: left;
+            }
+
+
+            h1 {
+                font-family: 'DM Sans', sans-serif;
+                font-weight: 700;
+                font-size: 40px;
+
+                @media (min-width: 768px) {
+                    font-size: 70px;
+                }
+
+                @media (min-width: 1400px) {
+                    font-size: 86px;
+                }
+            }
+
+            p {
+                font-size: 20px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                padding-left: 10px;
+                padding-right: 10px;
+                @media (min-width: 768px) {
+                    font-size: 16px;
+                    padding-left: 0px;
+                    padding-right: 0px;
+                }
+            }
+
+            a {
+                margin-right: 0px;
+                display: block;
+                margin-bottom: 20px;
+
+                @media (min-width: 768px) {
+                    margin-right: 0px;
+                    display: inline-block;
+                }
+
+
+            }
+
+        }
+
+        img {
+            display: none;
+            margin-right: -50px;
+
+            @media (min-width: 1200px) {
+                display: block;
+            }
+        }
+    }
 }
