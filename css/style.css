@@ -269,6 +269,11 @@ header .menu .main-menu .btn-yellow {
   flex: 1.5;
   padding: 20px;
 }
+.container .left-column-1 #button-features {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
 .container .left-column-1 p, .container .left-column-1 h2, .container .left-column-1 a {
   margin-bottom: 10px;
   margin: 30px;
@@ -421,6 +426,15 @@ header .menu .main-menu .btn-yellow {
   justify-content: start;
   gap: 40px;
 }
+.right-column-2 #btn-5 {
+  border: none;
+  background-color: #191919;
+  color: #F0EFE9;
+}
+.right-column-2 #btn-5:hover {
+  background-color: #f9D783;
+  color: #191919;
+}
 .right-column-2 .btn-6 {
   border: none;
   padding: 12px 30px;
@@ -428,4 +442,81 @@ header .menu .main-menu .btn-yellow {
 .right-column-2 .fa-regular {
   font-size: 25px;
   padding-right: 5px;
+}
+
+.h4-parag {
+  display: inline;
+  font-size: 16px;
+  color: #F94D1C;
+}
+
+.services {
+  display: grid;
+  background-color: #f0efe9;
+  padding-top: 100px;
+}
+.services .services-boxes {
+  display: flex;
+  gap: 30px;
+  padding-top: 50px;
+  text-align: start;
+  padding: 5px;
+  padding-top: 50px;
+}
+.services .services-boxes a {
+  text-decoration: none;
+  color: #191919;
+}
+.services .services-boxes a:hover {
+  background-color: #f9D783;
+}
+.services .services-boxes a:hover i {
+  color: #ffffff;
+  transition: 0.1s;
+}
+.services .services-boxes h3, .services .services-boxes p {
+  padding-left: 30px;
+}
+.services .services-boxes h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  padding-top: 90px;
+}
+.services .services-boxes p {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 25px;
+}
+.services .services-boxes i {
+  display: block;
+  padding-right: 25px;
+  padding-bottom: 30px;
+  font-size: 55px;
+  text-align: end;
+}
+.services .title {
+  display: block;
+  padding-left: 40px;
+}
+.services .box1 {
+  background-color: #ffffff;
+}
+.services .box2 {
+  background-color: #ffffff;
+}
+.services .box3 {
+  background-color: #ffffff;
+}
+.services .box4 {
+  background-color: #ffffff;
+}
+.services .button-7 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 120px;
 }

@@ -292,6 +292,12 @@ header {
       flex-direction: column;
       flex: 1.5;
       padding: 20px;
+
+      #button-features {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+      }
       
       
       p, h2, a {
@@ -459,6 +465,17 @@ header {
         gap: 40px;
     }
 
+    #btn-5 {
+        border: none;
+        background-color: #191919;
+        color: #F0EFE9;
+
+        &:hover {
+            background-color: #f9D783;
+            color: #191919;
+        }
+    }
+
     .btn-6 {
         border: none;
         padding: 12px 30px;
@@ -466,5 +483,102 @@ header {
     .fa-regular {
         font-size: 25px;
         padding-right: 5px;
+    }
+}
+
+.h4-parag {
+    display: inline;
+            font-size: 16px;
+            color: #F94D1C;
+}
+
+.services {
+    display: grid;
+    background-color: #f0efe9;
+    padding-top: 100px;
+
+    .services-boxes {
+        display: flex;
+        gap: 30px;
+        padding-top: 50px;
+        text-align: start;
+        padding: 5px;
+        padding-top: 50px;
+
+        a {
+            text-decoration: none;
+            color: #191919;
+
+            &:hover {
+                background-color: #f9D783;
+                i {
+                    color: #ffffff;
+                    transition: 0.1s;
+
+                }
+            }
+        }
+
+        h3, p {
+            padding-left: 30px;
+        }
+
+        h3 {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 22px;
+            font-weight: 700;
+            padding-top: 90px;
+        }
+            
+
+        
+        p {
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            padding-top: 25px;
+        }
+
+        i {
+            display: block;
+            padding-right: 25px;
+            padding-bottom: 30px;
+            font-size: 55px;
+            text-align: end;
+
+            
+        }
+
+    }
+
+    .title {
+        display: block;
+        padding-left: 40px;
+    }
+
+    .box1 {
+        background-color:#ffffff;
+        
+
+    }
+    .box2 {
+        background-color:#ffffff;
+        
+    }
+    .box3 {
+        background-color:#ffffff;
+    }
+    .box4 {
+        background-color:#ffffff;
+    }
+
+    .button-7 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-top: 50px;
+        margin-bottom: 120px;
+        
     }
 }
