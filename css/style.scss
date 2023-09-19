@@ -597,7 +597,7 @@ header {
     padding-top: 60px;
     padding-left: 50px;
     display: flex;
-
+    text-align: center;
     flex-direction: column;
 
     .image-1 {
@@ -673,14 +673,121 @@ header {
     }
 
 }
-// i {
-//     font-size: 30px;
-//     padding-left: 30px;
-//     display: flex;
-//     align-items: center;
-//     justify-items: center;
-//     text-align: start;
-//     width: 20%;
-//     padding-top: 20px;
-//     border: 1px solid black;
-// }
+
+.center-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-title {
+    padding-top: 70px;
+    padding-bottom: 40px;
+
+    @media (min-width:768px) {
+        padding-top: 120px;
+        padding-bottom: 90px;  
+    }
+ p {
+    color: #F94D1C;
+    margin-bottom: 10px;
+ }  
+ h2 {
+    color: #191919;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+ } 
+}
+
+
+
+#btn-5 {
+    border-radius: 25px;
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid #191919;
+    background-color: #191919;
+    color: #F0EFE9;
+
+    &:hover {
+        background-color: #F0EFE9;
+        color: #191919;
+    }
+}
+.project-case-section {
+    .container {
+        display: block;
+        .section-title {
+            text-align: center;
+        }
+
+        .project-and-cases {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+
+            @media (min-width:768px) {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .readmore {
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            article {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: auto 1fr auto;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+
+                &:hover {
+                    transition: 0.1s;
+                    width: 100.5%;
+                }
+            }
+            h3 {
+                font-family: 'DM Sans', sans-serif;
+                font-size: 22px;
+                font-weight: 700;
+                padding-top: 35px;
+                padding-bottom: 16px;
+                border-bottom: 1px solid #e7e7e7;
+                text-align: start;
+
+                
+            }
+
+            a {
+                font-family: 'Inter', sans-serif;
+                display: block;
+                text-align: right;
+                text-decoration: none;
+                font-size: 14px;
+                font-weight: 500;
+                color: #191919;
+                padding: 15px;
+
+            }
+            i {
+                margin-left: 5px;
+            }
+            
+        }
+        
+    }
+    .center-button {
+        margin: 50px 90px;
+
+        i {
+            padding-left: 10px;
+            padding-right: 10px;
+
+        }
+    }
+    }

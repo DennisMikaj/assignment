@@ -537,6 +537,7 @@ header .menu .main-menu .btn-yellow {
   padding-top: 60px;
   padding-left: 50px;
   display: flex;
+  text-align: center;
   flex-direction: column;
 }
 .why-choose-us .image-1 {
@@ -596,4 +597,106 @@ header .menu .main-menu .btn-yellow {
   .image-1 {
     display: none;
   }
+}
+
+.center-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-title {
+  padding-top: 70px;
+  padding-bottom: 40px;
+}
+@media (min-width: 768px) {
+  .section-title {
+    padding-top: 120px;
+    padding-bottom: 90px;
+  }
+}
+.section-title p {
+  color: #F94D1C;
+  margin-bottom: 10px;
+}
+.section-title h2 {
+  color: #191919;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+}
+
+#btn-5 {
+  border-radius: 25px;
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid #191919;
+  background-color: #191919;
+  color: #F0EFE9;
+}
+#btn-5:hover {
+  background-color: #F0EFE9;
+  color: #191919;
+}
+
+.project-case-section .container {
+  display: block;
+}
+.project-case-section .container .section-title {
+  text-align: center;
+}
+.project-case-section .container .project-and-cases {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+@media (min-width: 768px) {
+  .project-case-section .container .project-and-cases {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.project-case-section .container .project-and-cases .readmore:hover {
+  text-decoration: underline;
+}
+.project-case-section .container .project-and-cases article {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+.project-case-section .container .project-and-cases img {
+  width: 100%;
+  height: auto;
+}
+.project-case-section .container .project-and-cases img:hover {
+  transition: 0.1s;
+  width: 100.5%;
+}
+.project-case-section .container .project-and-cases h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  padding-top: 35px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e7e7e7;
+  text-align: start;
+}
+.project-case-section .container .project-and-cases a {
+  font-family: "Inter", sans-serif;
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #191919;
+  padding: 15px;
+}
+.project-case-section .container .project-and-cases i {
+  margin-left: 5px;
+}
+.project-case-section .center-button {
+  margin: 50px 90px;
+}
+.project-case-section .center-button i {
+  padding-left: 10px;
+  padding-right: 10px;
 }
