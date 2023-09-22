@@ -833,6 +833,13 @@ header .menu .main-menu .btn-yellow {
   display: flex;
   justify-content: flex-start;
 }
+@media (max-width: 570px) {
+  .testimonial .testimonial-columns {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+}
 .testimonial .testimonial-text {
   text-align: start;
   font-size: 18px;
@@ -861,6 +868,12 @@ header .menu .main-menu .btn-yellow {
   .testimonial .flex-column {
     padding-left: 10px;
     text-align: center;
+  }
+}
+@media (max-width: 570px) {
+  .testimonial .flex-column {
+    padding: 0;
+    margin: 0;
   }
 }
 .testimonial .bottom-content {
@@ -1006,4 +1019,54 @@ header .menu .main-menu .btn-yellow {
 }
 .articles-images .boxes .date-box p {
   color: #191919;
+}
+
+.signup {
+  background-color: #f0efe9;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+}
+@media (max-width: 990px) {
+  .signup {
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media (max-width: 452px) {
+  .signup {
+    display: block;
+    text-align: center;
+  }
+}
+@media (max-width: 460px) {
+  .signup a {
+    display: block;
+    margin-left: 90px;
+    margin-top: 20px;
+    width: 50%;
+  }
+}
+.signup .signup-bar {
+  padding: 10px;
+  margin-right: 10px;
+}
+@media (max-width: 475px) {
+  .signup .signup-bar {
+    margin: 20px;
+    display: block;
+    width: 100%;
+  }
+}
+.signup input {
+  border: 1px solid #acaba8;
+  height: 40px;
+  width: 220px;
+  text-align: center;
+  margin-right: 15px;
+}
+.signup img {
+  position: absolute;
+  bottom: 40px;
+  right: 0;
 }
