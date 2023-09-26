@@ -1,5 +1,5 @@
 <!DOCTYPE html>
- <html lang="sv-se">
+ <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,8 +14,15 @@
     <header>
         <div class="container">
             <a href="index.html"><img src="images/Logo.svg" alt="Crito logotype"></a>
-            <button class="menu-bars"><i class="menu-bars fa-solid fa-bars-staggered"></i>
-            </button>
+            <div class="dropdown">
+            <button id="toggleDropdown" class="dropbtn"><i class="menu-bars fa-solid fa-bars-staggered"></i></button>
+            <div class="dropdown-content">
+            <a href="index.html">Home</a>
+            <a href="#">Services</a>
+            <a href="#">News</a>
+            <a href="contact.html">Contact</a>
+            </div>
+        </div>
             <div class="menu">
                 <div class="top-menu">
                     <div class="contact-info">
@@ -44,7 +51,7 @@
                         <a class="active" href="index.html">Home</a>
                         <a href="services.html">Service</a>
                         <a href="news.html">News</a>
-                        <a href="contacts.html">Contacts</a>
+                        <a href="contact.html">Contact</a>
                     </nav>
                     <a class="btn-yellow login" href="login.html">Login <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
@@ -417,9 +424,12 @@
         <div class="container">
             <h2>Get News Updates By Signup</h2>
             <div class="signup-bar">
+                <form id="registerForm" method="post">
+                    <label for="email"></label>
                 <input type="email" placeholder="username@domain.com">
-                <a class="btn-yellow login" href="subscribe.html">Subscribe <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <button class="btn-yellow login" type="submit">Subscribe <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
                 <img src="images/Element.png" alt="Decorative line">
+            </form>
             </div>
 
         </div>

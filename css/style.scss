@@ -95,6 +95,9 @@ html, body {
 
     }
 }
+
+
+
 // header section
 header {
     padding: 16px;
@@ -105,6 +108,62 @@ header {
         gap: 70px;
         align-items: center;
         justify-content: space-between;
+
+        button {
+            border: none;
+            border-radius: 15px;
+            background-color: #F0EFE9;
+            }
+
+        .dropdown-content {
+            font-size: 25px;
+            
+            display: none;
+            border: none;
+            background-color: transparent;
+            
+
+            
+
+            a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                border: 1px solid #191919;
+                border-radius: 20px;
+                text-align: center;
+                padding: 5px;
+                background-color: #f0efe9;
+                margin: 4px;
+                
+            }
+            @media (min-width: 992px) {
+                
+                }
+            }
+
+            .dropdown:focus-within .dropdown-content {
+                display: block;
+                position: absolute;
+                right: 0;
+                z-index: 1;
+              }
+
+            .dropbtn:focus + .dropdown-content {
+                display: block;
+                position: absolute;
+                right: 0;
+                z-index: 1;
+                                
+
+                @media (min-width:992px) {
+                    display: none;
+                }
+
+                
+                
+              }
 
         .menu-bars {
             font-size: 25px;
@@ -198,14 +257,13 @@ header {
                         &:hover::after  {
                             content: '';
                             position: absolute;
-                            font-weight: 500; //medium
+                            font-weight: 500; 
                             height: 2px;
                             width: 15px;
                             background-color: #191919;
                             left: 50%;
                             bottom: -3px;
                             transform: translate((calc(50% - 15px)));
-                            
                         }
                     }
                 }
@@ -1168,9 +1226,10 @@ header {
         @media (max-width:452px) {
             display: block;
             text-align: center;
+
         }
         
-        a {
+        button {
             @media (max-width:460px) {
                 display: block;
                 margin-left: 90px;
@@ -1179,6 +1238,10 @@ header {
             }
         }
         h2 {
+            font-family: 'DM Sans', 'sans-serif';
+            font-weight: 700;
+            font-size: 45px;
+
         }
 
         .signup-bar {
@@ -1203,7 +1266,6 @@ header {
             position: absolute;
             bottom: 40px;
             right: 0;
-            
         }
     }
 
@@ -1214,6 +1276,7 @@ header {
 
         @media (max-width:1200px) {
             text-align: center;
+            align-items: center;
         }
         
 
@@ -1230,6 +1293,12 @@ header {
             margin-top: 30px;
             margin-right: 65px;
             color: #b6b6bc;
+
+            @media (max-width:1200px) {
+                text-align: center;
+                align-items: center;
+                margin-right: 0;
+            }
         }
 
         .content-2 {
@@ -1238,6 +1307,7 @@ header {
 
             @media (max-width:1200px) {
                 text-align: center;
+                margin-left: 0;
             }
 
             h2 {
@@ -1291,5 +1361,143 @@ header {
                 transition: 0.25s;
             }
             }
+        }
+    }
+
+
+    // CONTACT Page
+
+    .contact {
+        text-align: center;
+        width: 100%;
+        margin-top: 120px;
+        position: relative;
+
+        .decorative-lines {
+            position: inherit;            
+            top: 0px;
+            left: -300px;
+            
+        }
+        
+        
+        a {
+
+            color: #191919;
+            
+            text-decoration: none;
+            text-align: center;    
+        }
+    }
+
+    .contact-information {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-top: 120px;
+        text-align: center;
+        width: 100%;
+        position: relative;
+        padding-bottom: 80px;
+
+        @media (max-width:1200px) {
+            flex-direction: column;
+            
+        }
+
+        .contact-boxes {
+            border: 1px solid #d1d1d1;
+            padding: 50px 80px;
+            display: flex;
+            align-items: center;
+            text-align: left;
+
+            @media (max-width:1200px) {
+                margin-top: 10px;
+            }
+
+            .text {
+                display: flex;
+                flex-direction: column;
+
+                h3 {
+                    font-size: 22px;
+                    font-family: 'DM sans', 'sans-serif';
+                    font-weight: 700;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    font-size: 16px;
+                    font-family: 'inter', 'sans-serif';
+                    font-weight: 300;
+                    margin: 0px;
+                }
+            }
+
+            .fa-solid {
+                font-size: 45px;
+                margin-right: 20px;
+                margin-bottom: 55px;
+            }
+        }
+    }
+
+    .message-us {
+        background-color: #F0EFE9;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 80px;
+        width: 100%;
+
+
+        h2 {
+            font-family: 'DM sans', 'sans-serif';
+            font-weight: 700;
+            font-size: 45px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding-top: 120px;
+            
+        }
+    }
+
+    .input-column {
+        margin-bottom: 10px;
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input {
+            margin: 10px;
+            border-radius: 25px;
+            padding: 15px;
+            border: none;
+        }
+
+        textarea {
+            margin: 10px;
+            border-radius: 25px;
+            padding: 15px;
+            border: none;
+            height: 150px;
+            resize: none;
+        }
+
+        button {
+            margin-top: 20px;
+        }
+    }
+
+    .map {
+        margin-top: 100px;
+
+        img {
+            width: 100%;
         }
     }
