@@ -96,6 +96,16 @@ html, body {
     }
 }
 
+h2 {
+    color: #191919;
+    font-size: 40px;
+    font-family: 'DM sans', 'sans serif';
+    font-weight: 700;
+    
+
+    @media (min-width:1200px) {
+        font-size: 45px;
+    }}
 
 
 // header section
@@ -411,32 +421,37 @@ header {
       }
       
       
-      p, h2, a {
-        margin-bottom: 10px;
-        margin: 30px;
-        text-align: center;
+      
 
-        @media (min-width:1200px) {
-            text-align: start;
-
-        }
-      }
+      
 
       p {
         font-family: 'Inter', sans-serif;
         font-size: 18px;
         font-weight: 500;
         color: #F94D1C;
+        margin-bottom: 10px;
+        margin: 40px;
+
+        @media (max-width:1200px) {
+            text-align: center;
+        }
+        
       }
       h2 {
-        font-size: 27px;
+        margin: 40px;
+        text-align: center;
+        
 
         @media (min-width:1200px) {
-            font-size: 45px;
+            text-align: start;
+            
         }
       }
       a {
         display: block;
+        margin: 40px;
+        
         
       }
     }
@@ -456,17 +471,22 @@ header {
       }
       
       .icon-group {
-        flex-basis: calc(50% - 10px); /* Two columns with a gap */
+        flex-basis: calc(50% - 10px);
         flex-wrap: wrap;
         font-size: 40px;
         margin-bottom: 40px;
-        text-align: center;
+        text-align: start;
+
+        @media (max-width:1200px) {
+            text-align: center;
+        }
         
         h4, p {
           margin-bottom: 10px;
         }
         h4 {
             font-size: 22px;
+            margin-top: 20px;
 
         }
         p {
@@ -569,11 +589,12 @@ header {
 
     .buttons {
         display: flex;
-        flex-direction: row;
-        width: 100%;
-        align-items: center;
-        justify-content: start;
+        justify-content: flex-start;
         gap: 40px;
+
+        @media (max-width:1200px) {
+            justify-content: space-evenly;
+        }
     }
 
     #btn-5 {
@@ -589,7 +610,7 @@ header {
 
     .btn-6 {
         border: none;
-        padding: 12px 30px;
+        padding: 10px;
     }
     .fa-regular {
         font-size: 25px;
@@ -725,16 +746,12 @@ header {
     
 
     h2 {
-        font-family: 'DM Sans', sans-serif;
         padding-top: 30px;
-        padding-bottom: 50px;
-        font-size: 45px;
-        font-weight: 700;
     }
  }
 
  .boxes {
-    padding-top: 50px;
+    padding-top: 20px;
     margin-bottom: 20px;
     width: auto;
     display: block;
@@ -809,12 +826,7 @@ header {
     color: #F94D1C;
     margin-bottom: 10px;
  }  
- h2 {
-    color: #191919;
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 700;
-    font-size: 45px;
- } 
+ 
 }
 
 
@@ -944,9 +956,7 @@ header {
                     border: 1px solid black;
                 }
             }
-            .section-title {
-                
-             }
+            
         }
         .images-5 {
             @media (max-width:1400px)
@@ -1112,9 +1122,7 @@ header {
         font-weight: 700;
         font-size: 45px;
     }
-    a {
-        
-    }
+
     .btn-6 {
       align-self: flex-end;
 
@@ -1321,8 +1329,11 @@ header {
                 text-decoration: none;
                 font-family: 'Inter', sans-serif;
                 font-size: 16px;
-                padding-bottom: 20px;
+                margin-bottom: 20px;
                 color: #b6b6bc;
+                
+                @media (max-width:1200px) {
+                }
                 &:hover {
                     color: #ffffff;
                     transition: 0.25s;
@@ -1372,6 +1383,10 @@ header {
         width: 100%;
         margin-top: 120px;
         position: relative;
+
+        @media (max-width:1200px) {
+            padding-bottom: 20px;
+        }
 
         .decorative-lines {
             position: inherit;            
@@ -1497,7 +1512,8 @@ header {
     .map {
         margin-top: 100px;
 
-        img {
+        iframe {
             width: 100%;
+            height: 80vh;
         }
     }
