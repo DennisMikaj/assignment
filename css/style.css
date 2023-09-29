@@ -113,8 +113,14 @@ header .container .dropdown-content {
   border: none;
   background-color: transparent;
 }
+header .container .dropdown-content ul {
+  list-style-type: none;
+}
 header .container .dropdown-content a {
-  color: black;
+  font-weight: 600;
+  font-family: "DM-sans", "sans serif";
+  color: #191919;
+  background-color: #f9D783;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -122,10 +128,9 @@ header .container .dropdown-content a {
   border-radius: 20px;
   text-align: center;
   padding: 5px;
-  background-color: #f0efe9;
   margin: 4px;
 }
-header .container .dropdown:focus-within .dropdown-content {
+header .container .dropdown-toggle:focus-within .dropdown-content {
   display: block;
   position: absolute;
   right: 0;
@@ -319,7 +324,6 @@ header .menu .main-menu .btn-yellow {
 .companies {
   background-color: #ffffff;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -330,16 +334,16 @@ header .menu .main-menu .btn-yellow {
 }
 @media (min-width: 798px) {
   .companies {
-    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
   }
 }
 @media (min-width: 1200px) {
   .companies {
-    flex-direction: row;
-    width: 100%;
+    max-width: 100%;
+    width: 60%;
     flex-wrap: nowrap;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 }
 .companies img {
@@ -410,15 +414,15 @@ header .menu .main-menu .btn-yellow {
   }
 }
 .container .right-column-1 .icon-group {
-  flex-basis: calc(50% - 10px);
-  flex-wrap: wrap;
-  font-size: 40px;
-  margin-bottom: 40px;
-  text-align: start;
+  text-align: center;
 }
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
   .container .right-column-1 .icon-group {
-    text-align: center;
+    flex-basis: calc(50% - 10px);
+    flex-wrap: wrap;
+    font-size: 40px;
+    margin-bottom: 40px;
+    text-align: start;
   }
 }
 .container .right-column-1 .icon-group h4, .container .right-column-1 .icon-group p {
@@ -558,6 +562,12 @@ header .menu .main-menu .btn-yellow {
   padding-left: 30px;
   position: relative;
   overflow: visible;
+  z-index: 1;
+}
+@media (max-width: 998px) {
+  .services {
+    padding-left: 0px;
+  }
 }
 .services .services-boxes {
   display: flex;
@@ -565,11 +575,9 @@ header .menu .main-menu .btn-yellow {
   padding-top: 50px;
   text-align: start;
   padding: 5px;
-  padding-top: 50px;
 }
 @media (max-width: 998px) {
   .services .services-boxes {
-    display: flex;
     flex-direction: column;
   }
 }
@@ -628,7 +636,7 @@ header .menu .main-menu .btn-yellow {
   position: absolute;
   bottom: 0px;
   right: 0px;
-  z-index: 1;
+  z-index: -1;
 }
 .services .button-7 {
   display: flex;
@@ -1257,7 +1265,8 @@ footer .copyright a:hover {
 }
 @media (max-width: 1200px) {
   .contact-information .contact-boxes {
-    margin-top: 10px;
+    padding: 40px;
+    margin-top: 20px;
   }
 }
 .contact-information .contact-boxes .text {
@@ -1289,7 +1298,11 @@ footer .copyright a:hover {
   align-items: center;
   justify-content: center;
   padding-bottom: 80px;
-  width: 100%;
+}
+@media (max-width: 1200px) {
+  .message-us {
+    border: 1px solid red;
+  }
 }
 .message-us h2 {
   font-family: "DM sans", "sans-serif";
@@ -1303,6 +1316,15 @@ footer .copyright a:hover {
 
 .input-column {
   margin-bottom: 10px;
+}
+@media (max-width: 1200px) {
+  .input-column {
+    border: 1px solid red;
+    width: 80%;
+    margin-left: 10%;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .input-column form {
   display: flex;
