@@ -147,7 +147,6 @@ header {
                 border: 1px solid #191919;
                 border-radius: 20px;
                 text-align: center;
-                padding: 5px;
                 margin: 4px;
 
                 
@@ -181,7 +180,7 @@ header {
               }
 
 
-            //   dubbla styling
+            
             .menu-bars {        
             font-size: 25px;
             border: none;
@@ -293,6 +292,17 @@ header {
         }
 }
 // showcase section
+
+.first-showcase {
+    position: relative;
+    overflow: hidden;
+
+    .decorative-lines {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}
 .showcase {
     background-color: #F0EFE9;
 
@@ -313,12 +323,12 @@ header {
                 text-align: left;
             }
 
-            .decorative-lines {
-                position: absolute;
-                top: 512px;
-                left: -300px;
-                z-index: 0;
-            }
+            // .decorative-lines {
+            //     position: absolute;
+            //     top: 512px;
+            //     left: -300px;
+            //     z-index: 0;
+            // }
 
 
             h1 {
@@ -393,8 +403,9 @@ header {
     }
 
     @media (min-width: 1200px) {
+        justify-content: space-between;
         max-width: 100%;
-        width: 60%;
+        width: 100vh;
         flex-wrap: nowrap;
         padding-top: 80px;
         padding-bottom: 80px;
@@ -438,9 +449,12 @@ header {
         color: #F94D1C;
         margin-bottom: 10px;
         margin: 40px;
+        text-align: center;
 
-        @media (max-width:1200px) {
-            text-align: center;
+        
+
+        @media (min-width:1200px) {
+            text-align: start;
         }
         
       }
@@ -524,20 +538,20 @@ header {
         position: absolute;
         top: 62%;
         left: 0;
-        width: 63%;
-        height: 30%;
-        display: inline-block;
+        width: 80%;
+        height: 45%;
         padding: 20px;
         flex-grow: 1;
 
-        @media (max-width:468px) {
+        @media (min-width:420px) {
             width: 70%;
-            height: 40%;
+            height: 30%;
         }
-        @media (max-width:375px) {
-            width: 80%;
-            height: 45%;
+        @media (min-width:468px) {
+            width: 63%;
+            height: 30%;
         }
+        
 
         h4 {
             font-size: 20px;
@@ -1391,22 +1405,29 @@ header {
 
     // CONTACT Page
 
+    .contact-title {
+        position: relative;
+
+        img {
+                position: absolute;            
+                top: 0px;
+                left: 0px;
+        }
+    }
+
     .contact {
         text-align: center;
         width: 100%;
         margin-top: 120px;
         position: relative;
+        padding-bottom: 20px;
 
-        @media (max-width:1200px) {
-            padding-bottom: 20px;
+        @media (min-width:1200px) {
+            padding-bottom: 0px;
         }
+        
 
-        .decorative-lines {
-            position: inherit;            
-            top: 0px;
-            left: -300px;
-            
-        }
+        
         
         
         a {
@@ -1420,6 +1441,7 @@ header {
 
     .contact-information {
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
         padding-top: 120px;
@@ -1428,20 +1450,21 @@ header {
         position: relative;
         padding-bottom: 80px;
 
-        @media (max-width:1200px) {
-            flex-direction: column;
+        @media (min-width:1200px) {
+            flex-direction: row;
             
         }
 
         .contact-boxes {
             border: 1px solid #d1d1d1;
-            padding: 50px 80px;
+            padding: 40px;
+            margin-top: 20px;
             display: flex;
             align-items: center;
             text-align: left;
 
-            @media (max-width:1200px) {
-                padding: 40px;
+            @media (min-width:1200px) {
+                padding: 50px 80px;
                 margin-top: 20px;
             }
 
@@ -1475,14 +1498,12 @@ header {
     .message-us {
         background-color: #F0EFE9;
         display: flex;
-        width: 100%;
-        align-items: center;
         justify-content: center;
+        align-items: center;
+        width: 100%;
         padding-bottom: 80px;
 
-        @media (max-width:1200px) {
-            border: 1px solid red;
-        }
+        
 
         h2 {
             font-family: 'DM sans', 'sans-serif';
@@ -1497,14 +1518,14 @@ header {
     }
 
     .input-column {
-        margin-bottom: 10px;
+        width: 80%;
+        margin-left: 10%;
+        align-items: center;
+        justify-content: center;
+        
 
-        @media (max-width:1200px) {
-            border: 1px solid red;
-            width: 80%;
-            margin-left: 10%;
-            align-items: center;
-            justify-content: center;
+        @media (min-width:1200px) {
+            margin-bottom: 10px; 
         }
 
         form {

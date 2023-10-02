@@ -127,7 +127,6 @@ header .container .dropdown-content a {
   border: 1px solid #191919;
   border-radius: 20px;
   text-align: center;
-  padding: 5px;
   margin: 4px;
 }
 header .container .dropdown-toggle:focus-within .dropdown-content {
@@ -243,6 +242,16 @@ header .menu .main-menu .btn-yellow {
   padding-bottom: 12px;
 }
 
+.first-showcase {
+  position: relative;
+  overflow: hidden;
+}
+.first-showcase .decorative-lines {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
 .showcase {
   background-color: #F0EFE9;
 }
@@ -262,12 +271,6 @@ header .menu .main-menu .btn-yellow {
   .showcase .container .content {
     text-align: left;
   }
-}
-.showcase .container .content .decorative-lines {
-  position: absolute;
-  top: 512px;
-  left: -300px;
-  z-index: 0;
 }
 .showcase .container .content h1 {
   font-family: "DM Sans", sans-serif;
@@ -339,8 +342,9 @@ header .menu .main-menu .btn-yellow {
 }
 @media (min-width: 1200px) {
   .companies {
+    justify-content: space-between;
     max-width: 100%;
-    width: 60%;
+    width: 100vh;
     flex-wrap: nowrap;
     padding-top: 80px;
     padding-bottom: 80px;
@@ -379,10 +383,11 @@ header .menu .main-menu .btn-yellow {
   color: #F94D1C;
   margin-bottom: 10px;
   margin: 40px;
+  text-align: center;
 }
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
   .container .left-column-1 p {
-    text-align: center;
+    text-align: start;
   }
 }
 .container .left-column-1 h2 {
@@ -455,22 +460,21 @@ header .menu .main-menu .btn-yellow {
   position: absolute;
   top: 62%;
   left: 0;
-  width: 63%;
-  height: 30%;
-  display: inline-block;
+  width: 80%;
+  height: 45%;
   padding: 20px;
   flex-grow: 1;
 }
-@media (max-width: 468px) {
+@media (min-width: 420px) {
   .left-column-2 .bluebox {
     width: 70%;
-    height: 40%;
+    height: 30%;
   }
 }
-@media (max-width: 375px) {
+@media (min-width: 468px) {
   .left-column-2 .bluebox {
-    width: 80%;
-    height: 45%;
+    width: 63%;
+    height: 30%;
   }
 }
 .left-column-2 .bluebox h4 {
@@ -1219,21 +1223,26 @@ footer .copyright a:hover {
   transition: 0.25s;
 }
 
+.contact-title {
+  position: relative;
+}
+.contact-title img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
 .contact {
   text-align: center;
   width: 100%;
   margin-top: 120px;
   position: relative;
+  padding-bottom: 20px;
 }
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
   .contact {
-    padding-bottom: 20px;
+    padding-bottom: 0px;
   }
-}
-.contact .decorative-lines {
-  position: inherit;
-  top: 0px;
-  left: -300px;
 }
 .contact a {
   color: #191919;
@@ -1243,6 +1252,7 @@ footer .copyright a:hover {
 
 .contact-information {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   padding-top: 120px;
@@ -1251,21 +1261,22 @@ footer .copyright a:hover {
   position: relative;
   padding-bottom: 80px;
 }
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
   .contact-information {
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 .contact-information .contact-boxes {
   border: 1px solid #d1d1d1;
-  padding: 50px 80px;
+  padding: 40px;
+  margin-top: 20px;
   display: flex;
   align-items: center;
   text-align: left;
 }
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
   .contact-information .contact-boxes {
-    padding: 40px;
+    padding: 50px 80px;
     margin-top: 20px;
   }
 }
@@ -1294,15 +1305,10 @@ footer .copyright a:hover {
 .message-us {
   background-color: #F0EFE9;
   display: flex;
-  width: 100%;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  width: 100%;
   padding-bottom: 80px;
-}
-@media (max-width: 1200px) {
-  .message-us {
-    border: 1px solid red;
-  }
 }
 .message-us h2 {
   font-family: "DM sans", "sans-serif";
@@ -1315,15 +1321,14 @@ footer .copyright a:hover {
 }
 
 .input-column {
-  margin-bottom: 10px;
+  width: 80%;
+  margin-left: 10%;
+  align-items: center;
+  justify-content: center;
 }
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
   .input-column {
-    border: 1px solid red;
-    width: 80%;
-    margin-left: 10%;
-    align-items: center;
-    justify-content: center;
+    margin-bottom: 10px;
   }
 }
 .input-column form {
