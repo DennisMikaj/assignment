@@ -333,7 +333,6 @@ header .menu .main-menu .btn-yellow {
   padding-top: 10px;
   padding-bottom: 10px;
   gap: 10px;
-  width: calc(50% - 5px);
 }
 @media (min-width: 798px) {
   .companies {
@@ -342,9 +341,9 @@ header .menu .main-menu .btn-yellow {
 }
 @media (min-width: 1200px) {
   .companies {
-    justify-content: space-between;
+    justify-content: space-evenly;
     max-width: 100%;
-    width: 100vh;
+    width: 100%;
     flex-wrap: nowrap;
     padding-top: 80px;
     padding-bottom: 80px;
@@ -492,29 +491,29 @@ header .menu .main-menu .btn-yellow {
 }
 
 .right-column-2 {
-  padding-left: 200px;
+  padding-top: 45px;
+  text-align: center;
+  align-items: center;
   display: flex;
   flex: 1;
   flex-direction: column;
-  align-items: start;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
   .right-column-2 {
-    padding-left: 0px;
-    padding-top: 45px;
-    text-align: center;
-    align-items: center;
+    padding-left: 200px;
+    align-items: start;
+    text-align: start;
   }
 }
 .right-column-2 h3 {
-  font-size: 45px;
-  font-weight: 700;
+  font-size: 30px;
+  padding: 20px;
 }
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
   .right-column-2 h3 {
-    font-size: 30px;
-    padding: 20px;
+    font-size: 45px;
+    font-weight: 700;
   }
 }
 .right-column-2 .about {
@@ -527,12 +526,13 @@ header .menu .main-menu .btn-yellow {
 }
 .right-column-2 .buttons {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 40px;
+  align-items: center;
 }
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
   .right-column-2 .buttons {
-    justify-content: space-evenly;
+    justify-content: flex-start;
   }
 }
 .right-column-2 #btn-5 {
@@ -545,12 +545,14 @@ header .menu .main-menu .btn-yellow {
   color: #191919;
 }
 .right-column-2 .btn-6 {
+  display: flex;
+  align-items: center;
   border: none;
-  padding: 10px;
+  padding: 8px;
 }
 .right-column-2 .fa-regular {
-  font-size: 25px;
-  padding-right: 5px;
+  font-size: 40px;
+  margin-right: 5px;
 }
 
 .h4-parag {
@@ -563,39 +565,41 @@ header .menu .main-menu .btn-yellow {
   display: grid;
   background-color: #f0efe9;
   padding-top: 100px;
-  padding-left: 30px;
+  padding-left: 0px;
   position: relative;
   overflow: visible;
   z-index: 1;
 }
-@media (max-width: 998px) {
+@media (min-width: 998px) {
   .services {
-    padding-left: 0px;
+    padding-left: 30px;
   }
 }
 .services .services-boxes {
   display: flex;
+  flex-direction: column;
   gap: 30px;
   padding-top: 50px;
   text-align: start;
   padding: 5px;
 }
-@media (max-width: 998px) {
+@media (min-width: 998px) {
   .services .services-boxes {
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 .services .services-boxes a {
   text-decoration: none;
   color: #191919;
   z-index: 1;
+  transition: 0.2s ease-in-out;
 }
 .services .services-boxes a:hover {
   background-color: #f9D783;
 }
 .services .services-boxes a:hover i {
   color: #ffffff;
-  transition: 0.1s;
+  transition: 0.3s ease-in-out;
 }
 .services .services-boxes h3, .services .services-boxes p {
   padding-left: 30px;
@@ -621,11 +625,11 @@ header .menu .main-menu .btn-yellow {
 }
 .services .title {
   display: block;
-  padding-left: 40px;
+  text-align: center;
 }
-@media (max-width: 998px) {
+@media (min-width: 998px) {
   .services .title {
-    text-align: center;
+    text-align: start;
   }
 }
 .services .box1 {
@@ -655,12 +659,14 @@ header .menu .main-menu .btn-yellow {
   padding-top: 60px;
   padding-left: 50px;
   display: flex;
-  text-align: start;
+  text-align: center;
+  align-items: center;
   flex-direction: column;
 }
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
   .why-choose-us {
-    text-align: center;
+    text-align: start;
+    align-items: start;
   }
 }
 .why-choose-us .image-1 {
@@ -703,18 +709,18 @@ header .menu .main-menu .btn-yellow {
 }
 
 .image-1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  align-self: center;
-  height: 860px;
-  width: 100%;
-  background: linear-gradient(to top, #f0efe9 0%, #f0efe9 60%, white 50%, white 0%);
+  display: none;
 }
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
   .image-1 {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    height: 80vh;
+    width: 100%;
+    background: linear-gradient(to top, #f0efe9 0%, #f0efe9 60%, white 50%, white 0%);
   }
 }
 
@@ -816,34 +822,37 @@ header .menu .main-menu .btn-yellow {
 .meet-our-team {
   background-color: #edcf86;
   padding-bottom: 125px;
+  text-align: center;
 }
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
   .meet-our-team {
-    text-align: center;
+    text-align: start;
     padding-top: 10px;
   }
 }
 .meet-our-team .teams {
   display: flex;
+  flex-direction: column;
+  text-align: center;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
   .meet-our-team .teams {
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
+    flex-direction: row;
+    text-align: start;
+    align-items: flex-start;
     margin-top: 0px;
   }
 }
 .meet-our-team .teams .right-button {
   text-align: right;
-  margin-top: 160px;
+  margin-top: 5px;
+  margin-bottom: 40px;
 }
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
   .meet-our-team .teams .right-button {
-    margin-top: 5px;
-    margin-bottom: 40px;
+    margin-top: 160px;
   }
 }
 .meet-our-team .teams .right-button a {
@@ -851,19 +860,9 @@ header .menu .main-menu .btn-yellow {
 }
 .meet-our-team .images-5 {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
-}
-@media (max-width: 1400px) {
-  .meet-our-team .images-5 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media (max-width: 768px) {
-  .meet-our-team .images-5 {
-    display: block;
-    grid-template-columns: 1fr 1fr;
-  }
+  justify-content: space-around;
 }
 .meet-our-team .box-1 h5 {
   margin-top: 30px;
@@ -892,25 +891,26 @@ header .menu .main-menu .btn-yellow {
 }
 .testimonial .testimonial-columns {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
 }
-@media (max-width: 570px) {
+@media (min-width: 768px) {
   .testimonial .testimonial-columns {
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
   }
 }
 .testimonial .testimonial-text {
-  text-align: start;
-  font-size: 18px;
+  text-align: center;
+  font-size: 14px;
   font-family: "Inter", sans-serif;
   color: black;
 }
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
   .testimonial .testimonial-text {
-    font-size: 12px;
-    text-align: center;
+    font-size: 18px;
+    text-align: start;
   }
 }
 .testimonial .flex-column {
@@ -993,6 +993,11 @@ header .menu .main-menu .btn-yellow {
 }
 .articles .btn-6 {
   align-self: flex-end;
+}
+@media (max-width: 380px) {
+  .articles .btn-6 {
+    padding: 6px 15px;
+  }
 }
 @media (max-width: 1200px) {
   .articles .btn-6 {
@@ -1087,6 +1092,7 @@ header .menu .main-menu .btn-yellow {
   padding-top: 100px;
   padding-bottom: 100px;
   position: relative;
+  text-align: center;
 }
 @media (max-width: 990px) {
   .signup {
@@ -1094,19 +1100,11 @@ header .menu .main-menu .btn-yellow {
     text-align: center;
   }
 }
-@media (max-width: 452px) {
-  .signup {
-    display: block;
-    text-align: center;
-  }
-}
-@media (max-width: 460px) {
-  .signup button {
-    display: block;
-    margin-left: 90px;
-    margin-top: 20px;
-    width: 50%;
-  }
+.signup .subscribe-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
 }
 .signup h2 {
   font-family: "DM Sans", "sans-serif";
@@ -1115,11 +1113,12 @@ header .menu .main-menu .btn-yellow {
 }
 .signup .signup-bar {
   padding: 10px;
-  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media (max-width: 475px) {
-  .signup .signup-bar {
-    margin: 20px;
+  .signup {
     display: block;
     width: 100%;
   }

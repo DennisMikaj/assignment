@@ -83,14 +83,14 @@
     </section>
 
     <!-- companies -->
-    <section class="container companies">
-
+    <section class="container companies-section">
+    <div class="companies">
         <img src="images/Paperz.svg" alt="Company logo Paperz leading paper company"></a>
         <img src="images/Dorfus.svg" alt="Company logo Dorfus"></a>
         <img src="images/Martino.svg" alt="Company logo Martino colors of your life"></a>
         <img src="images/square.svg" alt="Company logo Square real estate solution"></a>
         <img class="gobona" src="images/Gobona.svg" alt="Company logo Gobona your trusted currier"></a>
-
+    </div>
 
     </section>
     
@@ -135,7 +135,7 @@
         <div class="left-column-2">
             <img src="images/womansmiling.svg" loading="lazy" alt="Woman at workplace smiling">
             <div class="bluebox">
-                <h4>Samantha Brown, <p class="h4-parag">Founder</p></h4>
+                <span><h4>Samantha Brown, </h4><p class="h4-parag">Founder</p></span>
                 
                 <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit."</p>
             </div>
@@ -430,19 +430,20 @@
         <div class="container">
             <h2>Get News Updates By Signup</h2>
             <div class="signup-bar">
-                <form id="registerForm" method="post">
+                <form id="registerForm" method="get">
                     <label for="email"></label>
-                <input type="email" placeholder="username@domain.com">
+                <input type="email" name="email" placeholder="username@domain.com">
+                <div class="subscribe-button">
                 <button class="btn-yellow login" type="submit">Subscribe <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
-                <img src="images/Element.png" alt="Decorative line">
+                </div>
             </form>
+                <img src="images/Element.png" alt="Decorative line">
             </div>
 
         </div>
     </section>
 
     <!-- bottom part -->
-
     
         <section class="bottom-part">
         <div class="container">
@@ -485,7 +486,7 @@
              <img class="bottom-lines" src="images/Element-2.png" loading="lazy" alt="Decorative lines">
     </div>
 </section>
-
+    <!-- footer -->
 <footer>
 <section class="top-border">
     <div class="container copyright">
