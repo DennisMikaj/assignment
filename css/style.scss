@@ -24,6 +24,7 @@ html, body {
         border: none;
         background-color: #c2aa70;
         &:hover {
+            transition: 0.1s;
             background-color: #191919;
         }
     }
@@ -34,12 +35,21 @@ html, body {
         height: 15px;
         border: none;
         align-self: center;
-            background-color: #d1d1d1;
+        background-color: #d1d1d1;
             &:hover {
+                transition: 0.1s;
                 background-color: #191919;
             } 
+
+            
         }
-        
+        .active-button-2 {
+            background-color: #191919;
+        }
+
+        .active-button-1 {
+            background-color: #191919;
+        }
 
          
 
@@ -344,6 +354,7 @@ header {
             }
 
             p {
+                color: #191919bb;
                 font-size: 20px;
                 padding-top: 30px;
                 padding-bottom: 30px;
@@ -508,11 +519,13 @@ header {
         h4 {
             font-size: 22px;
             margin-top: 20px;
+            font-weight: 700;
 
         }
         p {
             font-family: 'Inter', sans-serif;
             font-size: 16px;
+            color: #191919bb;
         }
       }
     }
@@ -530,6 +543,7 @@ header {
         padding-left: 10%;
         height: auto;
         display: block;
+        margin-top: 45px;
 
 
     }
@@ -557,11 +571,14 @@ header {
         h4 {
             font-size: 20px;
             display: inline;
+            font-weight: 700;
+
         }
         .h4-parag {
             display: inline;
             font-size: 16px;
             color: #F94D1C;
+            font-weight: 700;
         }
         p {
             font-size: 16px;
@@ -588,10 +605,15 @@ header {
         
     }
 
+    p {
+        color: #191919bb;
+    }
+
     h3 {
         
             font-size: 30px;
-            padding: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
 
         @media(min-width: 1200px) {
             font-size: 45px;
@@ -708,6 +730,7 @@ header {
         
         p {
             font-family: 'Inter', sans-serif;
+            color: #191919bb;
             font-size: 16px;
             font-weight: 400;
             padding-top: 25px;
@@ -800,14 +823,17 @@ header {
         padding-top: 10px;
         text-align: start;
         padding-left: 50px;
+        color: #191919bb;
     }
     i {
+        border: 1px solid #e7e7e7;
+        border-radius: 50px;
         font-size: 30px;
         float: left;
         margin-right: 20px;
         max-width: 100%;
         height: auto;
-        padding-top: 30px;
+        padding: 25px;
     }
     h3 {
         font-family: 'DM Sans', sans-serif;
@@ -927,6 +953,7 @@ header {
                 padding-top: 35px;
                 padding-bottom: 16px;
                 text-align: start;
+                border-bottom: 1px solid #e7e7e7;
 
                 
             }
@@ -1024,6 +1051,7 @@ header {
                 font-family: 'Inter', sans-serif;
                 font-size: 16px;
                 font-weight: 500;
+                color: #191919bb;
             }
             
         }
@@ -1211,7 +1239,7 @@ header {
         }
         
         #business-text {
-            color: #191919;
+            color: #6A6C71;
             padding-top: 35px;
             padding-left: 0px;
             padding-bottom: 30px;
@@ -1246,17 +1274,13 @@ header {
             }
             p {
             margin: 0;
-            padding: 0;    
-            }
-
-            p {
-                
-                color: #191919;
-
+            padding: 0;
+            color: #191919;    
             }
             
         }
-    }}
+    }
+}
 
 
     // signup
@@ -1272,16 +1296,6 @@ header {
             justify-content: center;
             text-align: center;
             
-        }
-
-        
-
-               
-        .subscribe-button {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-top: 20px;
         }
         
         h2 {
