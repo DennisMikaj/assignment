@@ -1240,7 +1240,7 @@ header {
         
         #business-text {
             color: #6A6C71;
-            padding-top: 35px;
+            padding-top: 5px;
             padding-left: 0px;
             padding-bottom: 30px;
             font-size: 16px;
@@ -1366,7 +1366,14 @@ header {
                 margin-right: 0;
             }
         }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
 
+            @media (max-width:768px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        
         .content-2 {
             margin-top: 115px;
             margin-left: 50px;
@@ -1377,7 +1384,8 @@ header {
             }
 
             h2 {
-                padding-bottom: 40px;
+                font-size: 22px;
+                padding-bottom: 30px;
                 font-family: 'DM Sans', sans-serif;
                 color: #ffffff;
             }
@@ -1398,7 +1406,7 @@ header {
                 }
             }
         }
-
+    }
         .bottom-lines {
             position: absolute;
             bottom: 0;
@@ -1407,10 +1415,16 @@ header {
 
         
     }
-
+    // footer
     footer {
         background-color: #0e1021;
         border-top: 1px solid #3e404d;
+
+        .social-media {
+            @media (max-width:1200px) {
+                margin-top: 15px;
+            }
+        }
 
         @media (max-width:1200px) {
             text-align: center;
@@ -1457,19 +1471,14 @@ header {
             padding-bottom: 0px;
         }
         
-
-        
-        
-        
         a {
-
+            margin-left: 20px;
             color: #191919;
-            
             text-decoration: none;
             text-align: center;    
         }
     }
-
+    // contact-boxes 
     .contact-information {
         display: flex;
         flex-direction: column;
@@ -1525,7 +1534,7 @@ header {
             }
         }
     }
-
+    // message us
     .message-us {
         background-color: #F0EFE9;
         display: flex;
@@ -1547,7 +1556,7 @@ header {
             
         }
     }
-
+    // input styling
     .input-column {
         width: 80%;
         margin-left: 10%;
@@ -1584,7 +1593,7 @@ header {
             margin-top: 20px;
         }
     }
-
+    // embedded map styling
     .map {
         margin-top: 100px;
 

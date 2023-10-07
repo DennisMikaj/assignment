@@ -1070,7 +1070,7 @@ header .menu .main-menu .btn-yellow {
 }
 .articles-images .boxes #business-text {
   color: #6A6C71;
-  padding-top: 35px;
+  padding-top: 5px;
   padding-left: 0px;
   padding-bottom: 30px;
   font-size: 16px;
@@ -1182,22 +1182,32 @@ header .menu .main-menu .btn-yellow {
     margin-right: 0;
   }
 }
-.bottom-part .content-2 {
+.bottom-part .grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+@media (max-width: 768px) {
+  .bottom-part .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.bottom-part .grid-container .content-2 {
   margin-top: 115px;
   margin-left: 50px;
 }
 @media (max-width: 1200px) {
-  .bottom-part .content-2 {
+  .bottom-part .grid-container .content-2 {
     text-align: center;
     margin-left: 0;
   }
 }
-.bottom-part .content-2 h2 {
-  padding-bottom: 40px;
+.bottom-part .grid-container .content-2 h2 {
+  font-size: 22px;
+  padding-bottom: 30px;
   font-family: "DM Sans", sans-serif;
   color: #ffffff;
 }
-.bottom-part .content-2 a {
+.bottom-part .grid-container .content-2 a {
   display: grid;
   text-decoration: none;
   font-family: "Inter", sans-serif;
@@ -1205,7 +1215,7 @@ header .menu .main-menu .btn-yellow {
   margin-bottom: 20px;
   color: #b6b6bc;
 }
-.bottom-part .content-2 a:hover {
+.bottom-part .grid-container .content-2 a:hover {
   color: #ffffff;
   transition: 0.25s;
 }
@@ -1218,6 +1228,11 @@ header .menu .main-menu .btn-yellow {
 footer {
   background-color: #0e1021;
   border-top: 1px solid #3e404d;
+}
+@media (max-width: 1200px) {
+  footer .social-media {
+    margin-top: 15px;
+  }
 }
 @media (max-width: 1200px) {
   footer {
@@ -1260,6 +1275,7 @@ footer .copyright a:hover {
   }
 }
 .contact a {
+  margin-left: 20px;
   color: #191919;
   text-decoration: none;
   text-align: center;
